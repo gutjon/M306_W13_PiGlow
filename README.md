@@ -34,7 +34,7 @@ Version: 1.0
   Wir haben uns überlegt eine Farbenkombination von Rot und Orange zu wählen passend zu Halloween. 
 
 
-   - Stolpersteine & Kniffe<br> Die Programmiersprache von dem GlowPi ist Python, da wir noch nie mit Python programmiert haben, musste wir uns Zeit nehmen die essentielle commands von Python zu lerne. Zusätzlich mussten wir uns überlegen wie genau man die einzelnen Lampen steuert.<br>
+   - Stolpersteine & Kniffe<br> Die Programmiersprache von dem GlowPi ist Python, da wir noch nie mit Python programmiert haben, musste wir uns Zeit nehmen die essentielle commands von Python zu lernen. Zusätzlich mussten wir uns überlegen wie genau man die einzelnen Lampen steuert.<br>
 
 # 3. Benoetigte Hard- und Software
   ## Hardware Materialliste<br>
@@ -54,35 +54,40 @@ Version: 1.0
 # 4. Installationsanleitung
  (Didaktisch reduzierte Anleitung. Lernende sollen eine eigene Lösungswege realisieren)<br>
  <br>
+
+ ## Vorbereitung Raspberry
  Auf dem RaspberryPI WLAN einrichten.
- Für die Installation von WEBMIN werden zusätzliche Libaries verwendet. Mit folgendem Befehl können diese eingerichtet werden.<br>
- <code>sudo apt-get install libnet-ssleay-perl libio-socket-ssl-perl</code>
-
-## Installation Webmin<br>
-Installation der aktuellsten WEBMIN Version 1.981<br>
-<code>cd wget http://prdownloads.sourceforge.net/webadmin/webmin-1.981-
-minimal.tar.gz</code>
-
-Entpacken der heruntergeladenen .tar.gz Datei<br>
-<code>tar -zxvf webmin-1.981 minimal.tar.gz</code>
-
-In den Ordner mit dem installiertem Setup wechseln<br>
-<code>cd webmin-1.881</code>
-
-Die Setup Datei ausführen<br>
-<code>sudo ./setup.sh</code>
-
-Bei dem Setup kann alles auf default gelassen werden. Empfehlenswert ist das Wechseln des Passwortes. 
-![Bild](/Bilder/change_password.png)$
+ <br>RaspberryPI Updates durchführen update und upgrade.<br>
+ Neues Python Directory im Home verzeichnis erstellen.
 
 
-Nach der Installation von Webmin wird die Adresse von Webmin angezeigt. 
-![Bild](/Bilder/webmin_installation_finished.png)
+## Installation PiGlow<br>
+Zuerst PiGlow installieren<br>
+<code>sudo apt install python3 -y</code>
 
-Default Benutzer: admin<br>
-Gesetztes Passwort: 12345
+Als nächstes muss man ein Python Script erstellen<br>
+<code>touch (name ds Scripts)</code>
 
-## Webmin konfigurieren (Nur für Lehrer)<br>
+In die eben erstellte Datei mit der vorinstallierten  Software Geany wechseln und den Code anpassen<br>
+<code>geany (name der Datei)</code>
+
+Mit den folgenden Codes kann man die einzelnen lichter steuern und verändern.<br>
+<code>import time abfolgen hinzufügen</code>
+<code>import piglow importiert das vorhin installierte
+PiGlow Module </code> <br>
+<code>piglow.set(0, 255) Für die Helligkeit</code>
+<code>piglow.set([1,3,5,7,9,11,13,15,17],255) Helligkeit für alle LEDS verändern</code><br>
+<code>piglow.all(#Wert) Alle Lampen steuern</code>
+<code>piglow.show() </code>
+<code>time.sleep(#WERT) Zeitspanne zwischen abfolgen</code>
+
+![Bild](/Bilder/Adressing.jpg)
+
+**Aufgabe: Alle LEDS von 1 bis 18 müssen nacheinander aufleuchten, zusätzlich müssen die LEDS immer heller werden.**
+
+
+
+## PiGlow installation (Nur für Lehrer)<br>
 
 Im Webmin Browserfenster können unter dem Punkt «Webmin
 Configuration» und dann «Webmin Modules» weiter Module installiert werden.
