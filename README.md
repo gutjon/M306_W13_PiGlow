@@ -75,8 +75,8 @@ Python Script erstellen:<br>
 Das Python Script mit Geany öffnen: (Vorinstalliertes Tool zum bearbeiten von Python Scripts) <br>
 <code>geany python_script.py</code>
 
-## Basic Commands GlowPI<br>
-Mit den folgenden Codes kann man die einzelnen lichter steuern und verändern<br>
+## Basic GlowPI Commands<br>
+Mit den folgenden Codes kann man die einzelnen LED's steuern und verändern:<br>
 <code>import piglow</code> importiert das vorhin installierte PiGlow Module  <br>
 <code>piglow.all(0)</code> Setzt alle LED's auf den Wert 0 (aus)<br>
 <br>
@@ -96,7 +96,7 @@ Beispiel:<br>
 Falls Probleme oder unklarheiten auftauchen schaue dir folgende Beispiele von GlowPI Python Scripts an:<br>
 https://github.com/pimoroni/piglow/tree/master/examples
 
-**Aufgabe 2: bei jedem Wechsel der LED's soll die Helligkeit erhöht werden.**
+**Aufgabe 2: Bei jedem Wechsel der LED's soll die Helligkeit erhöht werden.**<br>
 Tipp:<br>
 <code>piglow.set([LED-Nummer],Helligkeit)</code>
 
@@ -114,7 +114,6 @@ Um zu überprüfen, ob das Python Script funktioniert, führe das Script aus und
 
 
 # 6. Error-Handling 
-
 Generell hatten wir keine grössere Probleme. Jedoch haben wir viele Zeit benötigt, um die Python Befehle zu verstehen. Das Wissen haben wir uns durch Beispiel Scripts aufgebaut.<br>
 Dabei ist bei einer Aufgabe jede LED nacheinander aufgeleuchtet. Dafür wurde eine While Schlaufe verwendet und eine Variabel die bei jedem Durchgang den Wert erhöht. Da es nur 18 LED's gibt wurde im Beispiel folgender Code verwendet:<br>
 <code>piglow.set(i % 18, 1)</code>
