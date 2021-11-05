@@ -111,7 +111,7 @@ https://github.com/gutjon/M306_W13_PiGlow/blob/main/Python/Aufgabe2.py
 
 # 5. Qualitaetskontrolle
 Um zu überprüfen, ob das Python Script funktioniert, führe das Script aus und überprüfe, ob die LED's wie geplant aufleuchten.
-
+Wir empfehlen, immer bevor man das Script ausführt zu vermuten, was genau passieren wird. Wenn sich die Vermutung bewarheitet funktioniert das Script wie gewohlt.
 
 # 6. Error-Handling 
 Generell hatten wir keine grössere Probleme. Jedoch haben wir viele Zeit benötigt, um die Python Befehle zu verstehen. Das Wissen haben wir uns durch Beispiel Scripts aufgebaut.<br>
@@ -119,9 +119,9 @@ Dabei ist bei einer Aufgabe jede LED nacheinander aufgeleuchtet. Dafür wurde ei
 <code>piglow.set(i % 18, 1)</code>
 
 Zuerst haben wir nicht verstanden was diese Zeile an Code genau verursacht. Dabei ist uns aber nach einiger Zeit eingefallen, dass das "%" Zeichen in Powershell ebenfalls eine bedeutung hat. In Powershell wird durch das "%" Zeichen bei einer Divisions Rechnung den Restwert Berechnet. <br>
-Beispiele:<br>
-18 % 2 = 0 <br>
-10 % 3 = 1<br>
+Hilfreicher Link:<br>
+https://www.gut-erklaert.de/mathematik/division-mit-rest.html
+
 
 Nach dieser Erkenntnis haben hat die obere Zeile Code auch Sinn gemacht. Der Wert der Variabel "i" steigt bei jedem Durchgang der While Schlaufe um den Wert "i" und wird dadurch schnell höher sein als der Wert 18 (Anzahl der LED's). Damit weiterhin die LED's 1 - 18 angesteuert werden können wird dieser <code>(i % 18)</code> angewendet, damit der Wert 18 nie überschritten wird. <br>
 Beispiel Rechnungen:<br>
@@ -151,6 +151,9 @@ https://www.sivakids.de/python-while-schleife/
 
 Python Modulo Operator:<br>
 https://careerkarma.com/blog/python-modulo/#:~:text=The%20Python%20modulo%20operator%20calculates,then%20the%20remainder%20is%20returned
+
+Division mit Restwert:<br>
+https://www.gut-erklaert.de/mathematik/division-mit-rest.html
 
 RaspberryPI OS:<br>
 https://www.raspberrypi.org/software/
