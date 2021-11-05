@@ -107,46 +107,10 @@ Tipp:<br>
 
 ## Lösungen<br>
 **Aufgabe 1:**<br>
-<code>
-import time
-<br>
-<br>
-import piglow
-<br>
-<br>
-i = 0
-<br>
-<br>
-while True:<br>
-  print(i)<br>
-  piglow.all(0)<br>
-  piglow.set(i % 18, 1)<br>
-  piglow.show()<br>
-  i +=1<br>
-  time.sleep(0.1)<br>
-  </code>
+https://github.com/gutjon/M306_W13_PiGlow/blob/main/Python/Aufgabe1.py
 
 **Aufgabe 2:**<br>
-<code>
-import time
-<br>
-<br>
-import piglow
-<br>
-<br>
-i = 0
-<br>
-<br>
-while True:<br>
-  print(i)<br>
-  piglow.all(0)<br>
-  piglow.set(i % 18, i)<br> #Ändere nur den zweiten Wert in der Klammer auf den Variabel Namen in diesem Beispiel "i"
-  piglow.show()<br>
-  i +=1<br>
-  time.sleep(0.1)<br>
-  </code>
-
-
+https://github.com/gutjon/M306_W13_PiGlow/blob/main/Python/Aufgabe2.py
 
 
 # 5. Qualitaetskontrolle
@@ -155,7 +119,30 @@ Um zu überprüfen, ob das Python Script funktioniert, führe das Script aus und
 
 # 6. Error-Handling 
 
-Generell hatten wir keine grössere Probleme. Jedoch haben wir viele Zeit benötigt, um die Python Befehle zu verstehen.
+Generell hatten wir keine grössere Probleme. Jedoch haben wir viele Zeit benötigt, um die Python Befehle zu verstehen. Das Wissen haben wir uns durch Beispiel Scripts aufgebaut.<br>
+Dabei ist bei einer Aufgabe jede LED nacheinander aufgeleuchtet. Dafür wurde eine While Schlaufe verwendet und eine Variabel die bei jedem Durchgang den Wert erhöht. Da es nur 18 LED's gibt wurde im Beispiel folgender Code verwendet:<br>
+<code>piglow.set(i % 18, 1)</code>
+
+Zuerst haben wir nicht verstanden was diese Zeile an Code genau verursacht. Dabei ist uns aber nach einiger Zeit eingefallen, dass das "%" Zeichen in Powershell ebenfalls eine bedeutung hat. In Powershell wird durch das "%" Zeichen bei einer Divisions Rechnung den Restwert Berechnet. <br>
+Beispiele:<br>
+18 % 2 = 0 
+10 % 3 = 1
+
+Nach dieser Erkenntnis haben hat die obere Zeile Code auch Sinn gemacht. Der Wert der Variabel "i" steigt bei jedem Durchgang der While Schlaufe um den Wert "i" und wird dadurch schnell höher sein als der Wert 18 (Anzahl der LED's). Damit weiterhin die LED's 1 - 18 angesteuert werden können wird dieser <code>(i % 18)</code> angewendet, damit der Wert 18 nie überschritten wird. <br>
+Beispiel Rechnungen:<br>
+i = 19 <br>
+i % 18 = 1
+<br>
+<br>
+i = 20<br>
+i % 18 = 2
+<br>
+<br>
+i = 21<br>
+i % 18 = 3
+
+Falls das die Erklärung noch etwas zu kompliziert war, kann noch folgendes Python Script anlysiert werden, welches diese "%" Funktion simple anwendet:
+https://github.com/gutjon/M306_W13_PiGlow/blob/main/Python/Division_mit_Rest.py
 
 
 # 7. Quellen
