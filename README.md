@@ -30,21 +30,22 @@ Version: 1.0
    Die Installation von PiGlow (Werkstatt Auftrag 13) ist bis am 02:11.2021 um 12:00 abgeschlossen.<br>
   
   ## Einleitung
-  Mit dem GlowPi Module kann man verschiedenste Lämpchen mit einem Python Script ansteuern und konfigurieren. Durch dieses Script können die Lämpchen an- und ausgeschaltet werden und man kann individuell die Farben des Lämpchen steuern. <br>
+  Mit dem GlowPi Module kann man verschiedenste Lämpchen mit einem Python Script ansteuern und konfigurieren. Durch dieses Script können die Lämpchen an- und ausgeschaltet werden und man kann individuelle Muster mit diesen LED's erstellen ohne Grenzen zu haben. <br>
 
   ## Stolpersteine & Kniffe
    Die Programmiersprache von dem GlowPi ist Python, da wir noch nie mit Python programmiert haben, musste wir uns Zeit nehmen die essentielle commands von Python zu lernen. Zusätzlich mussten wir die Dokumentation von GlowPI genauer anschauen, um zu verstehen, wie diese einzelnen Lampen angesteuert werden können.<br>
+   Dokumentation GlowPI: https://github.com/pimoroni/piglow
 
 
 # 3. Benoetigte Hard- und Software
   ## Hardware Materialliste
   1x RaspberryPI v4 (inkl. Stromkabel)<br>
+  1x PiGlow<br>
   1x HDMI zu DVI Adapter<br>
   1x HDMI zu miniHDMI Adapter<br>
   1x Externer Bildschirm<br>
   1x Tastatur<br>
   1x Maus<br>
-  1x PiGlow<br>
 
  ## Software Anforderungen<br>
 1x RaspberryPI Linux Image<br>
@@ -90,7 +91,7 @@ Beispiel:<br>
 
 ## Aufgaben:
  **Aufgabe 1: Alle LEDS von 1 bis 18 müssen nacheinander aufleuchten.**<br>
-Tipp: Verwende eine While Schlaufe und nutze eine Variabel, welche bei jedem Durchgang um den Wert 1 erhöht wird. Dadurch wird nach jedem Durchgang die nächste LED angesteuert.
+**Tipp:** Verwende eine While Schlaufe und nutze eine Variabel, welche bei jedem Durchgang um den Wert 1 erhöht wird. Dadurch kann nach jedem Durchgang die nächste LED angesteuert werden.
 
 Falls Probleme oder unklarheiten auftauchen schaue dir folgende Beispiele von GlowPI Python Scripts an:<br>
 https://github.com/pimoroni/piglow/tree/master/examples
