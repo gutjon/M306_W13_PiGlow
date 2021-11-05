@@ -99,11 +99,7 @@ https://github.com/pimoroni/piglow/tree/master/examples
 **Aufgabe 2: bei jedem Wechsel der LED's soll die Helligkeit erhöht werden.**
 Tipp:<br>
 <code>piglow.set([LED-Nummer],Helligkeit)</code>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 
 ## Lösungen<br>
 **Aufgabe 1:**<br>
@@ -125,8 +121,8 @@ Dabei ist bei einer Aufgabe jede LED nacheinander aufgeleuchtet. Dafür wurde ei
 
 Zuerst haben wir nicht verstanden was diese Zeile an Code genau verursacht. Dabei ist uns aber nach einiger Zeit eingefallen, dass das "%" Zeichen in Powershell ebenfalls eine bedeutung hat. In Powershell wird durch das "%" Zeichen bei einer Divisions Rechnung den Restwert Berechnet. <br>
 Beispiele:<br>
-18 % 2 = 0 
-10 % 3 = 1
+18 % 2 = 0 <br>
+10 % 3 = 1<br>
 
 Nach dieser Erkenntnis haben hat die obere Zeile Code auch Sinn gemacht. Der Wert der Variabel "i" steigt bei jedem Durchgang der While Schlaufe um den Wert "i" und wird dadurch schnell höher sein als der Wert 18 (Anzahl der LED's). Damit weiterhin die LED's 1 - 18 angesteuert werden können wird dieser <code>(i % 18)</code> angewendet, damit der Wert 18 nie überschritten wird. <br>
 Beispiel Rechnungen:<br>
@@ -141,9 +137,8 @@ i % 18 = 2
 i = 21<br>
 i % 18 = 3
 
-Falls das die Erklärung noch etwas zu kompliziert war, kann noch folgendes Python Script anlysiert werden, welches diese "%" Funktion simple anwendet:
-https://github.com/gutjon/M306_W13_PiGlow/blob/main/Python/Division_mit_Rest.py
-
+Falls das die Erklärung noch etwas zu kompliziert war, kann noch folgendes Python Script anlysiert werden, welches diese "%" Funktion simple anwendet:<br>
+https://github.com/gutjon/M306_W13_PiGlow/blob/main/Python/Division_mit_Rest.py<br>
 
 # 7. Quellen
 Anleitung Installation Webmin:<br>
