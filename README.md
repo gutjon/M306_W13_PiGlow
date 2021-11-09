@@ -111,6 +111,10 @@ Version: 1.0
    **Aufgabe 2:**<br>
    https://github.com/gutjon/M306_W13_PiGlow/blob/main/Python/Aufgabe2.py
 
+## Live Demo
+<video width="320" height="240" controls>
+  <source src="/video/video0.mov" type="video/mp4">
+</video>
 
 # 5. Qualitaetskontrolle
    Um zu überprüfen, ob das Python Script funktioniert, führe das Script aus und überprüfe, ob die LED's wie geplant aufleuchten.
