@@ -106,12 +106,13 @@ Version: 1.0
 
 ## Lösungen<br>
    **Aufgabe 1:**<br>
-   https://github.com/gutjon/M306_W13_PiGlow/blob/main/Python/Aufgabe1.py
+   <a href="https://github.com/gutjon/M306_W13_PiGlow/blob/main/Python/Aufgabe1.py" title="Demo zur PiGlow">1. Aufgabe PiGlow</a>
+   
 
    **Aufgabe 2:**<br>
-   https://github.com/gutjon/M306_W13_PiGlow/blob/main/Python/Aufgabe2.py
-
-## Live Demo
+   <a href="https://github.com/gutjon/M306_W13_PiGlow/blob/main/Python/Aufgabe2.py" title="Demo zur PiGlow">2. Aufgabe 2 PiGlow</a>
+   
+**Live Demo:**<br>
 <a href="https://github.com/gutjon/M306_W13_PiGlow/blob/main/livedemo/video0.mov" title="Demo zur PiGlow">Demo zur PiGlow</a>
 
 # 5. Qualitaetskontrolle
